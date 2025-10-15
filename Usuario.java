@@ -11,6 +11,20 @@ public class Usuario {
         this.libros = new ArrayList<>();
     }
 
+    /*Creamos los getters y setters*/
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getCodigo() {
+        return codigo;
+    }
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
     /*Creamos el método para prestar libro*/
     public void prestarLibro(Libro libro){
         if (libro.estaDisponible()){
